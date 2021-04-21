@@ -245,11 +245,14 @@ input.transparent-input{
 }
 
 #feature {
+  font-family: ff-enzo-web, sans-serif;
+  font-weight: 300;
+  font-style: normal;
   min-height: 100vh;
   margin-top: 100px;
 }
 .story-item {
-  padding: 25% 20%;
+  padding: 300px 20px 200px 20px;
   color: #000;
 
   background-position: center top;
@@ -257,8 +260,18 @@ input.transparent-input{
   background-size: cover;
   background-color: #fff;
 }
+@media (min-width: 992px) {
+  .story-item {
+    padding: 25%;
+  }
+  .story-item .story-body {
+    font-size: 150%;
+  }
+}
 .close {
-  margin: 25% 25% 0 0;
+  margin: 0 25% 0 0;
+  position: relative;
+  bottom: 200px;
 }
 .story-title {
   margin: 20px auto;
@@ -281,6 +294,7 @@ audio.audio {
 }
 .feature-bg-4 {
   background-image: url(../img/bg_feature_4-min.png);
+  padding: 33% 30%;
 }
 .feature-bg-5 {
   background-image: url(../img/bg_feature_5-min.png);
